@@ -8,8 +8,8 @@ import (
 type Tree struct {
 	Root *Node
 }
-func(tr *Tree)Insert(pathAddr []string){
-	tr.Root.insert(pathAddr)
+func(tr *Tree)Insert(pathAddr []string)int{
+	return tr.Root.insert(pathAddr)
 }
 func(tr *Tree)Delete(pathAddr []string)int{
 	return tr.Root.delete(pathAddr)
